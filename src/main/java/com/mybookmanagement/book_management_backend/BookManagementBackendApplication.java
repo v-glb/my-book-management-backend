@@ -6,8 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class BookManagementBackendApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(BookManagementBackendApplication.class, args);
-	}
-
+    public static void main(String[] args) {
+        SpringApplication.run(BookManagementBackendApplication.class, args);
+    }
 }
