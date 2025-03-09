@@ -14,7 +14,7 @@ import java.time.LocalDateTime;
 public class Book {
     
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    // @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(nullable = false)
@@ -33,7 +33,8 @@ public class Book {
 
     public Book() {}
 
-    public Book(String title, String author, Integer rating, String notes, LocalDateTime createdAt) {
+    public Book(Long id, String title, String author, Integer rating, String notes, LocalDateTime createdAt) {
+        this.id = id;
         this.title = title;
         this.author = author;
         this.rating = rating;
